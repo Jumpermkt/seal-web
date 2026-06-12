@@ -383,7 +383,9 @@ body{animation:pageIn .45s ease both}
   .grafico{transform:scale(.8);transform-origin:top left}
   .stats-bar{flex-wrap:wrap;gap:18px}
   .stat-div{display:none}
-  .logo
+  .logo-grid{grid-template-columns:repeat(3,1fr)}
+}
+
 /* ============ AVATAR STACK (prueba social) ============ */
 .avatar-stack{display:flex;flex-shrink:0}
 .avatar-stack span{
