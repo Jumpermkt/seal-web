@@ -104,3 +104,12 @@ document.addEventListener('keydown', e=>{
        interacción activa; queda igual que en el proto. ---- */
 const btnMas = document.getElementById('btnMasServicios');
 if(btnMas) btnMas.addEventListener('click', ()=>{ /* sin acción, como el proto */ });
+
+/* ---- Menú mobile ---- */
+const navToggle = document.getElementById('navToggle');
+if(navToggle && nav){
+  navToggle.addEventListener('click', ()=> nav.classList.toggle('menu-open'));
+  document.querySelectorAll('.nav-links a').forEach(a=>{
+    a.addEventListener('click', ()=> nav.classList.remove('menu-open'));
+  });
+}
