@@ -480,3 +480,12 @@ body{animation:pageIn .45s ease both}
 .grafico .connector{z-index:1}
 .grafico .grafico-img{z-index:2}
 .grafico .info-card{z-index:3}
+
+/* puntito en la unión línea-tarjeta (como la referencia) */
+.info-card.dot-b::after,.info-card.dot-t::after{
+  content:'';position:absolute;width:7px;height:7px;border-radius:50%;
+  background:#222;left:var(--dx);
+}
+.info-card.dot-b::after{bottom:-3.5px}
+.info-card.dot-t::after{top:-3.5px}
+.info-card p{font-size:10.5px;line-height:1.4}
