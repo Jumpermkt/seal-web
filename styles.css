@@ -489,3 +489,8 @@ body{animation:pageIn .45s ease both}
 .info-card.dot-b::after{bottom:-3.5px}
 .info-card.dot-t::after{top:-3.5px}
 .info-card p{font-size:10.5px;line-height:1.4}
+
+/* tarjetas de infografía: tipografía exacta de la referencia */
+.info-card{padding:16px 14px;width:207px}
+.info-card h5{font-size:12px;margin-bottom:7px}
+.info-card p{font-size:10px;line-height:1.45}
